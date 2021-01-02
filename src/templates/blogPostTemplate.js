@@ -11,6 +11,7 @@ export default ({ data, pageContext }) => {
 		siteUrl,
 		siteLanguage,
 		siteLocale,
+		siteTitle,
 		twitterUsername,
 		authorName,
 	} = useSiteMetadata();
@@ -21,6 +22,7 @@ export default ({ data, pageContext }) => {
 		<Layout>
 			<SEO
 				title={title}
+				titleTemplate={siteTitle}
 				description={excerpt}
 				image={
 					cover === null ? `${siteUrl}${image}` : `${siteUrl}${cover.publicURL}`

@@ -14,7 +14,7 @@ const Image = styled(Img)`
 export default ({ data }) => {
 	const {
 		description,
-		title,
+		siteTitle,
 		image,
 		siteUrl,
 		siteLanguage,
@@ -25,7 +25,8 @@ export default ({ data }) => {
 		<>
 			<Layout>
 				<SEO
-					title={title}
+					title="My Coding Blog Journey"
+					titleTemplate={siteTitle}
 					description={description}
 					image={`${siteUrl}${image}`}
 					pathname={siteUrl}

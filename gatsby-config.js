@@ -1,5 +1,5 @@
 const siteMetadata = {
-	title: "The Localhost Blog",
+	siteTitle: "The Localhost Blog",
 	description: "This is my coding blog where I write about my coding journey.",
 	image: `/code.jpg`,
 	siteUrl: `https://tender-mestorf-28347a.netlify.app/`,
